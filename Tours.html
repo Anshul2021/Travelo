@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours</title>
+    <link rel="stylesheet" href="CSS/index_style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+    <link rel="stylesheet" href="CSS/Tours_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- -------------Js used------------- -->
+    <div id="progress"></div>
+    <div id="preloader"></div>
+    <img src="Images/close.png" alt="close" id="close" onclick="closemenu()" />
+    <img src="Images/list.png" alt="open" id="open" onclick="openmenu()" />
+    <header class="v-hidden v-visible" id="menu">
+      <!-- logo -->
+      <div class="left">
+        <a href="index.html" class="empty"
+          ><img src="Images/main logo(white).webp" alt="logo" class="logo"
+        /></a>
+      </div>
+      <!-- -------------nav-bar----------- -->
+      <nav>
+        <ul class="navlist">
+          <li class="navbar home">
+            <a href="index.html" class="navs nav1">Home</a>
+          </li>
+          <li class="navbar tours">
+            <a href="#" class="navs nav2">Tours</a>
+          </li>
+          <li class="navbar about"><a href="About.html" class="navs nav3">About</a></li>
+          <li class="navbar blog"><a href="Blog.html" class="navs nav4">Blog</a></li>
+          <li class="navbar contact">
+            <a href="Contact.html" class="navs nav5">Contact</a>
+          </li>
+          <button class="call">
+            <i id="phone" class="fa fa-phone"></i>
+            <p class="size">+10 (67) 678 2567</p>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- ----------------Upper background------------- -->
+    <section class="upper-bg">
+      <div class="head-img"></div>
+      <h1 class="top-head">Tours</h1>
+    </section>
+    <!-- -------------------Grid images-------------- -->
+    <section class="grid">
+      <!-- <img src="https://source.unsplash.com/400x200/?nature,water" alt=""> -->
+      <h1 class="top">Famous Destination</h1>
+      <div class="img-grid">
+        <div class="england all">
+          <img src="Images/tour 1.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">England</h3>
+          <h3 class="name pad-n">Majestic Big Ben</h3>
+          <h5 class="price pad-n">$1635.00</h5>
+          <p class="info pad-n">
+            Travel makes one modest, you see <br />
+            what a tiny place you occupy <br />
+            in the world
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 2.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Italy</h3>
+          <h3 class="name pad-n">Discover Venice</h3>
+          <h5 class="price pad-n">$1550.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 3.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Turky</h3>
+          <h3 class="name pad-n">Historical Istanbul</h3>
+          <h5 class="price pad-n">$1250.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 4.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Switzerland</h3>
+          <h3 class="name pad-n">Faithful Swiss Alps</h3>
+          <h5 class="price pad-n">$1425.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 5.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Spain</h3>
+          <h3 class="name pad-n">Elegant Madrid</h3>
+          <h5 class="price pad-n">$1425.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 6.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Spain</h3>
+          <h3 class="name pad-n">Brave Barcelona</h3>
+          <h5 class="price pad-n">$1350.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 7.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Maldives</h3>
+          <h3 class="name pad-n">Sunny Ari Atoll</h3>
+          <h5 class="price pad-n">$2350.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 8.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">France</h3>
+          <h3 class="name pad-n">Amazing Eiffel Tower</h3>
+          <h5 class="price pad-n">$2350.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="england all">
+          <img src="Images/tour 9.jpg" alt="loading" class="tour1" />
+          <h3 class="place pad-n">Brazil</h3>
+          <h3 class="name pad-n">Tall Rio de Janeiro</h3>
+          <h5 class="price pad-n">$2150.00</h5>
+          <p class="info pad-n">
+            Proin gravida nibh vel velit auctor <br />
+            aliquet. Aenean sollicitudin, lorem <br />
+            quis bibendum auctor.
+          </p>
+          <button class="explore" id="edit">
+            View Details <i id="arrow" class="fa fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- -------------footer------------------>
+    <footer>
+        <div class="site-primary-footer">
+         <img src="Images/main logo(white).webp" alt="" id="foot-logo">
+         <section class="Connection Categories">
+           <h2 class="bolder bolder1">Company</h2>
+           <p class="Connect first_left">
+             Pricing <br>
+             About <br>
+             Gallery <br>
+             Contact
+           </p>
+         </section>
+         <section class="Connection Business">
+          <h2 class="bolder bolder2">Destination</h2>   
+          <p class="Connect second_left">
+             India <br>
+             Italy <br>
+             Canada <br> 
+             Switzerland
+           </p>
+         </section>
+         <section class="Connection About">
+         <h2 class="bolder bolder3">Services</h2>
+         <p class="Connect center">
+           Health <br>
+           Ecommerce <br>
+           Food <br>
+           Guide
+           </p>
+         </section>
+         <section class="Connection Follow">
+         <h2 class="bolder bolder5">Follow Us</h2>
+           <div class="Connect right_first">
+           <button class="social1"><i class="fa fa-facebook-square"></i></button>
+           <button class="social2"><i class="fa fa-twitter"></i></button>
+           <button class="social3"><i class="fa fa-instagram"></i></button>
+           <button class="social4"><i class="fa fa-youtube-play"></i></button>
+           <button class="social5"><i class="fa fa-pinterest-p"></i></button>
+         </section>
+       </div>
+     </div><hr>
+     <div class="site-secondary-footer"> 
+       <p class="down">Copyright &copy; 2021 TRAVELO | Powered by TRAVELO
+       </p>
+     </div>
+     </footer>
+    <script src="Java script/script.js"></script>
+  </body>
+</html>
+

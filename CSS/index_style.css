@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+
+/* ------------default------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+::selection {
+  background-color: violet;
+  color: black;
+}
+
+/* variable */
+:root {
+  --jose: "Josefin Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --yesterday: "Yesteryear", cursive;
+  --work: "Work Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --nunito: "Nunito", sans-serif;
+  --rubik: "Rubik", sans-serif;
+  --grey: #414042;
+  --blue: #00095e;
+  --dark-blue: #040e27;
+}
+/* -------------preloader (plane)-------------- */
+#preloader {
+  background: rgb(251 251 251) url(../Images/preloader.gif) no-repeat center
+    center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* -------------preloader (Youtube)-------------- */
+
+#progress {
+  border-bottom: 5px solid red;
+  width: 100%;
+  height: 5px;
+  animation: youtube-animate 1s ease-in-out infinite;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+@keyframes youtube-animate {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 5%;
+  }
+  50% {
+    width: 20%;
+  }
+  75% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* -------------header------------ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: #778beb;
+  transition: 0.5s linear;
+}
+/* -----------hamburger------------ */
+#open,
+#close {
+  font-size: 3.5rem;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  right: 20px;
+  z-index: 5;
+  float: right;
+}
+/* -------------------logo----------------- */
+.left {
+  margin: 10px;
+}
+
+/* -------------navbar--------------- */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  list-style: none;
+  padding: 0px 25px;
+  font-size: 1.7rem;
+  font-family: var(--jose);
+}
+.navbar .navs {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navs:hover {
+  color: lightcoral;
+  transition: 0.3s ease-in-out;
+}
+/* -------------call btn-------------- */
+nav .navlist .call {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  font-family: var(--jose);
+  background-color: #39c2ea;
+  color: white;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+nav .navlist .call:hover {
+  background-color: #8cd835;
+  transition: 0.3s ease-in-out;
+}
+
+#phone {
+  padding-right: 10px;
+  font-size: 1.5em;
+}
+/* --------------main-------------- */
+main .small {
+  font-size: 3.2rem;
+  font-family: var(--yesterday);
+  color: var(--grey);
+  font-weight: 100;
+}
+main .jose {
+  font-size: 5rem;
+  font-family: var(--jose);
+  color: var(--blue);
+  line-height: 1.5;
+}
+/* heading */
+
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  line-height: 3;
+  color: var(--blue);
+}
+main .heading .head-l {
+  font-family: var(--jose);
+  font-size: 6rem;
+  line-height: 1.2;
+  text-align: center;
+}
+main .heading .head-s {
+  font-family: var(--roboto);
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* explore btn */
+
+.explore {
+  padding: 15px 50px;
+  font-family: var(--roboto);
+  background-color: #39c2ea;
+  border: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  background-position: left bottom;
+}
+.explore:hover {
+  transition: all 0.5s ease-out;
+  color: white;
+  background: linear-gradient(to left, #0652dd 10%, #39c2ea 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+/* ----------------section(background)----------- */
+.background {
+  width: 100%;
+  height: 100vh;
+}
+.background .travel {
+  background-image: url(../Images/travel\ bg.webp);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+/* ----------------section(popular)----------- */
+.popular .tour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+}
+.popular .tour .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 8rem;
+}
+/* .popular .tour .text .text-s mentioned in the main comment */
+.popular .tour .text .text-s {
+  font-size: 3.4rem;
+}
+.popular .tour .text .text-l {
+  font-size: 7.5rem;
+  font-family: var(--jose);
+  font-weight: bold;
+  color: var(--blue);
+}
+.popular .tour .text .view {
+  margin-top: 30px;
+}
+
+/* --------------boxes---------------- */
+
+.popular .tour .boxes {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  position: relative;
+  bottom: 120px;
+}
+.popular .tour .boxes .bottom {
+  position: relative;
+  bottom: 70px;
+}
+/* --------------boxes___background---------------- */
+.popular .tour .boxes .box1 {
+  background-image: linear-gradient(
+      170deg,
+      rgba(72, 168, 165, 0.85) 0%,
+      rgba(65, 64, 66, 0) 100%
+    ),
+    url(../Images/box\ 1.jpg);
+  background-repeat: no-repeat;
+}
+.popular .tour .boxes .box2 {
+  background-image: linear-gradient(
+      170deg,
+      rgba(72, 168, 165, 0.85) 0%,
+      rgba(242, 41, 91, 0) 100%
+    ),
+    url(../Images/box\ 2.jpg);
+  background-repeat: no-repeat;
+}
+.popular .tour .boxes .box3 {
+  background-image: linear-gradient(
+      170deg,
+      #3a3a3a 0%,
+      rgba(65, 64, 66, 0) 100%
+    ),
+    url(../Images/box\ 3.jpg);
+  background-repeat: no-repeat;
+}
+.popular .tour .boxes .box4 {
+  background-image: linear-gradient(
+      170deg,
+      #3a3a3a 0%,
+      rgba(242, 41, 91, 0) 100%
+    ),
+    url(../Images/box\ 4.jpg);
+  background-repeat: no-repeat;
+}
+.popular .tour .boxes .box:hover {
+  transition: 0.3s linear;
+  filter: brightness(0.7);
+}
+
+/* -----------box text--------------- */
+.popular .tour .boxes .place {
+  font-size: 3.2rem;
+  font-family: var(--yesterday);
+  font-weight: 100;
+}
+.popular .tour .boxes .name {
+  font-family: var(--jose);
+  font-weight: 100;
+  font-size: 2rem;
+}
+.popular .tour .boxes .price {
+  font-family: var(--work);
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.popular .tour .boxes .place,
+.name,
+.price {
+  color: white;
+  padding: 10px 25px 0px 25px;
+}
+.popular .tour .boxes .place {
+  padding-top: 35px;
+}
+
+/* ----------------section(about us)--------------- */
+
+.about .flex {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* -----right----- */
+
+.about .right {
+  margin: auto 10%;
+}
+/* .about .right .m-text mentioned in main comment */
+
+/* .about .right .l-text  mentioned in main comment */
+
+.about .right .s-text {
+  font-size: 18px;
+  font-family: var(--roboto);
+  color: #677f8b;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+.about .flex .margin {
+  margin-top: 25px;
+}
+
+/* -----------------------Review------------------ */
+.review {
+  margin: 80px 0px;
+}
+.customer .hero {
+  margin: 80px 0px;
+}
+/* ----------------section(Video)----------- */
+.video .center,
+.offer .center {
+  text-align: center;
+}
+
+.video .manali {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+}
+
+/* -------------section(Best Offer)--------------- */
+
+.offer .description {
+  background-color: white;
+  font-family: var(--poppins);
+  font-size: 2.2rem;
+  word-spacing: 1.8px;
+  line-height: 2;
+  margin: 30px;
+  text-align: center;
+}
+.offer #middle {
+  margin: "100px 0px";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------bottom-box-------- */
+
+/* --------------bottom-boxes---------------- */
+
+.offer .bottom-boxes {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: 100px 50px;
+}
+.offer .bottom-boxes .bottom-box {
+  background-color: transparent;
+  width: 100%;
+  height: 60vh;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* --------------bottom-boxes___background---------------- */
+.offer .bottom-boxes .bottom-box1 {
+  background-image: linear-gradient(
+      170deg,
+      rgba(72, 168, 165, 0.85) 0%,
+      rgba(65, 64, 66, 0) 100%
+    ),
+    url(../Images/bottom_box1.jpg);
+}
+.offer .bottom-boxes .bottom-box2 {
+  background-image: linear-gradient(
+      170deg,
+      rgba(72, 168, 165, 0.85) 0%,
+      rgba(242, 41, 91, 0) 100%
+    ),
+    url(../Images/bottom_box2.jpg);
+}
+.offer .bottom-boxes .bottom-box3 {
+  background-image: linear-gradient(
+      170deg,
+      #3a3a3a 0%,
+      rgba(65, 64, 66, 0) 100%
+    ),
+    url(../Images/bottom_box3.jpg);
+}
+.offer .bottom-boxes .bottom-box4 {
+  background-image: linear-gradient(
+      170deg,
+      #3a3a3a 0%,
+      rgba(242, 41, 91, 0) 100%
+    ),
+    url(../Images/bottom_box4.jpg);
+}
+.offer .bottom-boxes .bottom-box:hover {
+  transition: 0.5s linear;
+  background-position: right;
+  background-blend-mode: multiply;
+}
+
+/* -----------Bottom-box text--------------- */
+.place {
+  font-size: 3.2rem;
+  font-family: var(--yesterday);
+  font-weight: 100;
+}
+.name {
+  font-family: var(--jose);
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+.price {
+  font-family: var(--work);
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.place,
+.name,
+.price {
+  color: white;
+  padding: 10px 25px 0px 25px;
+}
+.bottom-boxes .place {
+  padding-top: 35px;
+}
+
+/* ----------------footer---------------- */
+footer .site-primary-footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+footer .Connect {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  color: #aab1b7;
+}
+
+footer .Connection .bolder {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 3;
+}
+
+footer .Follow .right_first button {
+  border: 2px solid black;
+  border-radius: 50%;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+footer .Follow .right_first .social1:hover {
+  color: #4267b2;
+  transition: 0.3s linear;
+}
+
+footer .Follow .right_first .social2:hover {
+  color: #1da1f2;
+  transition: 0.3s linear;
+}
+
+footer .Follow .right_first .social3:hover {
+  color: #c13584;
+  transition: 0.3s linear;
+}
+
+footer .Follow .right_first .social4:hover {
+  color: #ff0000;
+  transition: 0.3s linear;
+}
+
+footer .Follow .right_first .social5:hover {
+  color: #b10d0d;
+  transition: 0.3s linear;
+}
+
+footer .site-secondary-footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+footer .site-secondary-footer .down {
+  font-size: 1.8rem;
+  font-family: var(--nunito);
+  padding: 0rem 6rem;
+  text-align: center;
+}

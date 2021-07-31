@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/index_style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+    <link rel="stylesheet" href="CSS/About_style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- -------------Js used------------- -->
+    <div id="progress"></div>
+    <div id="preloader"></div>
+    <img src="Images/close.png" alt="close" id="close" onclick="closemenu()" />
+    <img src="Images/list.png" alt="open" id="open" onclick="openmenu()" />
+    <header class="v-hidden v-visible" id="menu">
+      <!-- logo -->
+      <div class="left">
+        <a href="index.html" class="empty"><img src="Images/main logo(white).webp" alt="logo" class="logo" /></a>
+      </div>
+      <!-- -------------nav-bar----------- -->
+      <nav>
+        <ul class="navlist">
+          <li class="navbar home"><a href="#" class="navs nav1">Home</a></li>
+          <li class="navbar tours"><a href="Tours.html" class="navs nav2">Tours</a></li>
+          <li class="navbar about"><a href="About.html" class="navs nav3">About</a></li>
+          <li class="navbar blog"><a href="Blog.html" class="navs nav4">Blog</a></li>
+          <li class="navbar contact">
+            <a href="Contact.html" class="navs nav5">Contact</a>
+          </li>
+          <button class="call">
+            <i id="phone" class="fa fa-phone"></i>
+            <p class="size">+10 (67) 678 2567</p>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ---------------------heading------------------- -->
+      <div class="heading">
+        <h1 class="head-l">
+          Take only memories leave <br />
+          only footprints
+        </h1>
+        <h4 class="head-s">
+          Let's start your journey with us, your dream will come true
+        </h4>
+        <br />
+        <button class="explore">Explore</button>
+      </div>
+      <!-- -------------------background----------------- -->
+      <section class="background">
+        <div class="travel"></div>
+      </section>
+      <!-- ---------------our popular------------------ -->
+      <section class="popular">
+        <div class="tour">
+          <div class="text">
+            <h4 class="text-s margin small">our most</h4>
+            <h2 class="text-l margin">Popular Tours</h2>
+            <button class="explore view margin">View Tours</button>
+          </div>
+          <div class="boxes">
+            <div class="box box1">
+              <h3 class="place">Maldives</h3>
+              <h3 class="name">Sunny Aria Atoll</h3>
+              <h5 class="price">$2541.00</h5>
+            </div>
+            <div class="box box2 bottom">
+              <h3 class="place">England</h3>
+              <h3 class="name">Majestic Big Ben</h3>
+              <h5 class="price">$1635.00</h5>
+            </div>
+            <div class="box box3">
+              <h3 class="place">Italy</h3>
+              <h3 class="name">Discover Venice</h3>
+              <h5 class="price">$1550.00</h5>
+            </div>
+            <div class="box box4 bottom">
+              <h3 class="place">Turkey</h3>
+              <h3 class="name">Historical Istanbul</h3>
+              <h5 class="price">$2541.00</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------About Us--------------------- -->
+      <section class="about">
+        <div class="flex">
+          <div class="left">
+            <img src="Images/new human.webp" alt="human" class="human" />
+          </div>
+          <div class="right">
+            <h3 class="m-text small">About Us</h3>
+            <h2 class="l-text jose">Get ready for real time adventure</h2>
+            <p class="s-text">
+              “Travel is the main thing you purchase that makes you more
+              extravagant”. We, at ‘Travelo’, swear by this and put stock in
+              satisfying travel dreams that make you perpetually rich
+              constantly. We have been moving excellent encounters for a
+              considerable length.
+            </p>
+            <button class="explore book margin">Book Destination</button>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------Review------------------------ -->
+    <section class="customer">
+      <div class="hero" style="  background-image: linear-gradient(
+        170deg,
+        rgba(30, 0, 50, 0.8) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(Images/1.jpg);">
+        <h1 class="review">Testimonials</h1>
+        <div class="review-box">
+          <div id="slide">
+            <div class="card">
+              <div class="profile">
+                <img src="Images/user-1.jpg" class="pic" style=" border-radius: 5px" />
+                <div>
+                  <h3 class="naam">Michael</h3>
+                  <p class="job">Web Designer</p>
+                </div>
+              </div>
+              <p class="description">
+                It's being a great experience with TRAVELO As Well As Mr Shivam
+                always available for help and for any kind of coordination.
+                Prompt service, immediate call backs.
+              </p>
+            </div>
+            <div class="card">
+              <div class="profile">
+                <img src="Images/user-2.jpg" class="pic" style=" border-radius: 5px" />
+                <div>
+                  <h3 class="naam">Sophia</h3>
+                  <p class="job">UI/UX Designer</p>
+                </div>
+              </div>
+              <p class="description">
+                Thanks for planning my trip. The hotel in Manali Himalayan
+                Heights is the very good hotel we stayed and we loved our
+                journey and it is a memorable trip for us.Thank for this
+                experience.
+              </p>
+            </div>
+            <div class="card">
+              <div class="profile">
+                <img src="Images/user-3.jpg" class="pic" style=" border-radius: 5px" />
+                <div>
+                  <h3 class="naam">Elizabeth</h3>
+                  <p class="job">Senior Developer</p>
+                </div>
+              </div>
+              <p class="description">
+                It's being a nice experience with TRAVELO As Well As Mr Navin
+                always available for help and for any kind of coordination.
+                Prompt service, immediate call backs.
+              </p>
+            </div>
+            <div class="card">
+              <div class="profile">
+                <img src="Images/user-4.jpg" class="pic" style=" border-radius: 5px" />
+                <div>
+                  <h3 class="naam">Richard</h3>
+                  <p class="job">Team Lead</p>
+                </div>
+              </div>
+              <p class="description">
+                Thanks for planning my trip. The hotel in Goa is very nice we
+                stayed and we loved our journey and it is a memorable trip for
+                us.Thank for this experience.
+              </p>
+            </div>
+          </div>
+          <div class="sidebar">
+            <img src="Images/up-arrow.png" class="fun up-arrow" id="upArrow" />
+            <img
+              src="Images/down-arrow.png"
+              class="fun down-arrow"
+              id="downArrow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- ------------------Video------------------------ -->
+      <section class="video">
+        <div class="v-head">
+          <h3 class="small center">Watch It</h3>
+          <h2 class="jose center">Beauty Of India</h2>
+        </div>
+        <div class="manali">
+          <iframe
+            width="500"
+            height="350"
+            src="https://www.youtube.com/embed/nkwLjnragtw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="margin: 10px"
+          ></iframe>
+          <iframe
+            width="500"
+            height="350"
+            src="https://www.youtube.com/embed/7bv_eqtkKqQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="margin: 10px"
+          ></iframe>
+        </div>
+      </section>
+      <!-- -------------------Best Offer----------------- -->
+      <section class="offer">
+        <div class="contain">
+        <div class="v-head" id="middle">
+          <h3 class="small center">Our Trending</h3>
+          <h2 class="jose center">Best Offers</h2>
+          <p class="description">
+            Your Driver will take you to Manali where you’ll experience culture,
+            food, and entertainment like never before. Manali is one the most
+            beautiful destinations we can offer, and our itinerary will expose
+            you to all of the amazing experiences that the area has to offer.
+            Your trip will begin on 1st August , depart from Prayagraj , and
+            last for 7 days . You’ll return to Prayagraj on 7th August .
+          </p>
+          <button class="explore offer-btn margin">View Offers</button>
+        </div>
+        <div class="bottom-boxes">
+          <div class="bottom-box bottom-box1">
+            <h3 class="place">France</h3>
+            <h3 class="name">Amazing Eiffle Tower</h3>
+            <h5 class="price">$1250.00</h5>
+          </div>
+          <div class="bottom-box bottom-box2 bottom">
+            <h3 class="place">Switzerland</h3>
+            <h3 class="name">Faithful Swiss Alps</h3>
+            <h5 class="price">$2345.00</h5>
+          </div>
+          <div class="bottom-box bottom-box3">
+            <h3 class="place">Spain</h3>
+            <h3 class="name">Elegant Madrid</h3>
+            <h5 class="price">$1425.00</h5>
+          </div>
+          <div class="bottom-box bottom-box4 bottom">
+            <h3 class="place">Brazil</h3>
+            <h3 class="name">Rio The Janeiro</h3>
+            <h5 class="price">$2150.00</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+    </main>
+     <!-- -------------footer------------------>
+     <footer>
+       <div class="site-primary-footer">
+        <img src="Images/main logo(white).webp" alt="" id="foot-logo">
+        <section class="Connection Categories">
+          <h2 class="bolder bolder1">Company</h2>
+          <p class="Connect first_left">
+            Pricing <br>
+            About <br>
+            Gallery <br>
+            Contact
+          </p>
+        </section>
+        <section class="Connection Business">
+         <h2 class="bolder bolder2">Destination</h2>   
+         <p class="Connect second_left">
+            India <br>
+            Italy <br>
+            Canada <br> 
+            Switzerland
+          </p>
+        </section>
+        <section class="Connection About">
+        <h2 class="bolder bolder3">Services</h2>
+        <p class="Connect center">
+          Health <br>
+          Ecommerce <br>
+          Food <br>
+          Guide
+          </p>
+        </section>
+        <section class="Connection Follow">
+        <h2 class="bolder bolder5">Follow Us</h2>
+          <div class="Connect right_first">
+          <button class="social1"><i class="fa fa-facebook-square"></i></button>
+          <button class="social2"><i class="fa fa-twitter"></i></button>
+          <button class="social3"><i class="fa fa-instagram"></i></button>
+          <button class="social4"><i class="fa fa-youtube-play"></i></button>
+          <button class="social5"><i class="fa fa-pinterest-p"></i></button>
+        </section>
+      </div>
+    </div><hr>
+    <div class="site-secondary-footer"> 
+      <p class="down">Copyright &copy; 2021 TRAVELO | Powered by TRAVELO
+      </p>
+    </div>
+    </footer>
+    <script src="Java script/script.js"></script>
+  </body>
+</html>
+

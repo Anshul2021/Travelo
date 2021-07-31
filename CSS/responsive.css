@@ -1,0 +1,452 @@
+/* --------------header, navbar, heading-------------- */
+@media only screen and (max-width: 840px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+/* ----for mobile view----*/
+
+@media only screen and (max-width: 650px) {
+  #preloader {
+    background-size: 90%;
+  }
+  header {
+    top: -100vh;
+    height: 100vh;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 25px;
+    background-color: var(--dark-blue) !important;
+  }
+  header .left .logo {
+    width: 200px;
+  }
+  #open,
+  #close {
+    display: block;
+  }
+  .background {
+    height: 75vh;
+  }
+  .background .travel {
+    height: 75vh;
+  }
+  .left {
+    margin: 0px;
+  }
+  nav {
+    margin-right: 0px;
+  }
+  nav .navlist .navbar .navs {
+    position: relative;
+    color: white;
+  }
+  nav .navlist .navbar .navs::after {
+    content: "";
+    height: 5px;
+    width: 0%;
+    background-color: #eea16d;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.3s linear;
+  }
+  nav .navlist .navbar .navs:hover::after {
+    width: 100%;
+  }
+  .navlist {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+  }
+  .navbar {
+    padding: 12px 0px;
+    font-size: 5rem;
+  }
+  nav .navlist .call {
+    padding: 2.5rem 4rem;
+  }
+  .size {
+    font-size: 2.5rem;
+  }
+  #phone {
+    font-size: 2.5rem !important;
+  }
+  .heading {
+    position: relative;
+    top: 100px;
+  }
+  main .heading .head-l {
+    font-size: 5rem;
+  }
+  main .heading .head-s {
+    font-size: 1.8rem;
+    margin: 0px 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main .heading .head-l {
+    font-size: 4.2rem;
+  }
+  main .heading .head-s {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    font-size: 4rem;
+  }
+}
+
+/* ----------------section(background)----------- */
+
+@media only screen and (max-width: 500px) {
+  .background .travel {
+    background-size: cover;
+    background-position: center left 90%;
+  }
+  .background,
+  .background .travel {
+    height: 60vh;
+  }
+  nav .navlist .call {
+    padding: 1.8rem 3rem;
+  }
+  #phone {
+    font-size: 2.2rem !important;
+  }
+  .size {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---------------our popular------------------ */
+
+@media only screen and (max-width: 950px) {
+  .popular .tour {
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px;
+  }
+  .popular .tour .text {
+    padding-bottom: 8rem;
+    padding-left: 0;
+    align-items: center;
+  }
+  .popular .tour .text .text-l {
+    text-align: center;
+  }
+  .popular .tour .boxes {
+    flex-direction: column;
+    bottom: 0px;
+    margin: 0px 20px;
+  }
+  .popular .tour .boxes .bottom {
+    bottom: 0px;
+  }
+  .popular .tour .boxes .box {
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: top center;
+  }
+  .popular .tour .boxes .box:hover {
+    transition: 0.8s linear;
+    background-position: bottom;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .popular .tour .text .text-l {
+    font-size: 6.5rem;
+  }
+}
+
+/* ----------------about us--------------- */
+
+@media only screen and (max-width: 1200px) {
+  .about .right .l-text {
+    font-size: 3rem;
+  }
+  .about .right .m-text {
+    font-size: 2.8rem;
+  }
+  .about .right .s-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .about .flex {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .about .right {
+    margin-top: 50px;
+  }
+  .about .left .human {
+    width: 100%;
+  }
+}
+
+/* --------------------------Review------------------------ */
+
+@media only screen and (max-width: 900px) {
+  .review .parent {
+    width: 80%;
+    background-color: #92b0d0;
+  }
+  .review .parent .flex {
+    flex-direction: column-reverse;
+  }
+  .review .parent .reverse {
+    flex-direction: column-reverse;
+  }
+  .review .parent .content .para {
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .review .review-text .text-l {
+    font-size: 5rem;
+  }
+  .face {
+    width: 150px;
+  }
+  .review .parent .content .para {
+    font-size: 1.3rem;
+  }
+
+  /* -----------offer---------- */
+  .offer .description {
+    font-size: 1.5rem;
+  }
+  #clear {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .bottom-boxes {
+    flex-direction: column;
+    bottom: 0px;
+    margin: 50px 20px !important;
+  }
+  .bottom-boxes .bottom-box {
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/* -----------------footer----------------------- */
+
+@media (max-width: 700px) {
+  footer .site-secondary-footer .down {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 770px) {
+  footer .site-primary-footer {
+    height: 50vh;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 630px) {
+  footer .site-primary-footer {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+  .Connection {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer .site-primary-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: row;
+    padding: 0rem 2rem;
+    align-items: center;
+  }
+  .site-primary-footer #foot-logo {
+    position: absolute;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer .site-secondary-footer .down {
+    font-size: 1.2rem;
+  }
+  .Connection {
+    margin-right: 0px;
+  }
+}
+
+/* -------------------Tours page---------------------------- */
+@media (max-width: 460px) {
+  .grid .top {
+    font-size: 8rem !important;
+  }
+}
+/* -------------------About page---------------------------- */
+@media (max-width: 460px) {
+  .top-head {
+    font-size: 9rem !important;
+  }
+}
+/* --------------who we are (section)------------------ */
+@media (max-width: 1400px) {
+  .about-us .right-para {
+    font-size: 1.5rem;
+    line-height: 1.8;
+  }
+}
+@media (max-width: 900px) {
+  .about-us {
+    width: auto;
+  }
+  .about-us .bottom-wrap {
+    flex-direction: column;
+  }
+  .bottom-wrap #left-img {
+    width: 60%;
+  }
+  .about-us .right-para {
+    margin: 3rem auto;
+    width: 70%;
+  }
+  .about-us .top-wrap {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .bottom-wrap #left-img,
+  .about-us .right-para {
+    width: 75%;
+  }
+  .about-us .top-text-2 {
+    font-size: 6rem;
+  }
+}
+/* --------------Thumbnail (section)------------------ */
+
+@media (max-width: 750px) {
+  hr {
+    width: 100%;
+  }
+  #remove {
+    display: none;
+  }
+  .thumbnail {
+    width: auto;
+    justify-content: space-evenly;
+  }
+
+  .thumbnail {
+    flex-direction: column;
+  }
+  .thumbnail .icon-wrap {
+    margin: 30px auto;
+    width: auto;
+  }
+  .thumbnail .icon-info {
+    font-size: 2rem;
+  }
+  .thumbnail .icon-describe {
+    font-size: 1.5rem;
+  }
+}
+/* ---------Customer Review(section)--------------- */
+@media (max-width: 480px) {
+  .customer .hero .description {
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 30px;
+  }
+  .customer .hero .sidebar {
+    width: 50px;
+  }
+  .customer .hero .sidebar .fun {
+    width: 30px;
+  }
+  .customer .hero .profile .naam {
+    font-size: 2.2rem;
+  }
+}
+
+/* ------------Blog (page)------------ */
+@media (max-width: 850px) {
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-right {
+    padding-left: 0px;
+  }
+  .post-img {
+    border-radius: 50%;
+  }
+}
+@media (max-width: 680px) {
+  .blog-left {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .overlay-blog {
+    padding: 15px 20px;
+  }
+  .overlay-blog .same {
+    font-size: 1.7rem;
+  }
+  .upper-bg .head-img {
+    background-position: right;
+  }
+}
+/* ------------Contact (page)----------- */
+@media (max-width: 900px) {
+  .map .map-center {
+    width: 100%;
+  }
+  .form {
+    flex-direction: column;
+    width: auto;
+  }
+  .form .form-left,
+  .form .form-right {
+    width: 80%;
+  }
+  .form .form-right {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 500px) {
+  .form .form-left,
+  .form .form-right {
+    width: 90%;
+  }
+  .form .form-right .left-title {
+    font-size: 1.5em;
+  }
+  .form .form-right .bottom-title {
+    font-size: 1.3em;
+  }
+  .form .form-right #items {
+    font-size: 2em;
+  }
+}

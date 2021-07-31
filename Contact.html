@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/index_style.css" />
+    <link rel="stylesheet" href="CSS/Tours_style.css" />
+    <link rel="stylesheet" href="CSS/Blog_style.css" />
+    <link rel="stylesheet" href="CSS/Contact_style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- -------------Js used------------- -->
+    <div id="progress"></div>
+    <div id="preloader"></div>
+    <img src="Images/close.png" alt="close" id="close" onclick="closemenu()" />
+    <img src="Images/list.png" alt="open" id="open" onclick="openmenu()" />
+    <header class="v-hidden v-visible" id="menu">
+      <!-- logo -->
+      <div class="left">
+        <a href="index.html" class="empty"
+          ><img src="Images/main logo(white).webp" alt="logo" class="logo"
+        /></a>
+      </div>
+      <!-- -------------nav-bar----------- -->
+      <nav>
+        <ul class="navlist">
+          <li class="navbar home">
+            <a href="index.html" class="navs nav1">Home</a>
+          </li>
+          <li class="navbar tours">
+            <a href="Tours.html" class="navs nav2">Tours</a>
+          </li>
+          <li class="navbar about">
+            <a href="About.html" class="navs nav3">About</a>
+          </li>
+          <li class="navbar blog">
+            <a href="Blog.html" class="navs nav4">Blog</a>
+          </li>
+          <li class="navbar contact">
+            <a href="#" class="navs nav5">Contact</a>
+          </li>
+          <button class="call">
+            <i id="phone" class="fa fa-phone"></i>
+            <p class="size">+10 (67) 678 2567</p>
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- ----------------Upper background------------- -->
+    <section class="upper-bg">
+      <div class="head-img" id="gradient"></div>
+      <h1 class="top-head">Contact Us</h1>
+    </section>
+    <!-- -----------map--------------------- -->
+    <section class="map">
+      <div class="map-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115330.30224709222!2d81.731544191673!3d25.402402231534754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534c9b20bd49f%3A0xa2237856ad4041a!2sPrayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1627676643205!5m2!1sen!2sin"
+          width="100%"
+          height="480"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <!-- -----------Get in touch--------------- -->
+    <section class="form">
+      <div class="form-left">
+        <h2 class="form-head">Get in Touch</h2>
+        <div class="all-together">
+          <textarea
+            rows="10"
+            cols="70"
+            class="ur-msg join"
+            placeholder="Enter Message"
+          ></textarea
+          ><br />
+          <div class="flex-input">
+            <input
+              type="text"
+              class="ur-name join"
+              placeholder="Enter your name"
+              spellcheck="true"
+            /><input
+              type="email"
+              class="ur-email join"
+              placeholder="Email"
+              spellcheck="true"
+            />
+          </div>
+          <br />
+          <input
+            type="text"
+            class="ur-subject join"
+            placeholder="Enter Subject"
+            spellcheck="true"
+          />
+          <button class="submit">SEND</button>
+        </div>
+      </div>
+      <div class="form-right">
+        <div class="left-text">
+          <i id="items" class="fa fa-phone-square"></i>
+          <div class="f-not">
+            <h3 class="left-title both">+1 253 565 2365</h3>
+            <h4 class="bottom-title both">Mon to Fri 9am to 6pm</h4>
+          </div>
+        </div>
+        <div class="left-text">
+          <i id="items" class="fa fa-home"></i>
+          <div class="f-not">
+            <h3 class="left-title both">Buttonwood, California</h3>
+            <h4 class="bottom-title both">Rosemead, CA 91770</h4>
+          </div>
+        </div>
+        <div class="left-text">
+          <i id="items" class="fa fa-inbox"></i>
+          <div class="f-not">
+            <h3 class="left-title both">amazingfacts113@gmail.com</h3>
+            <h4 class="bottom-title both">Send us your query anytime!</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------footer------------------>
+    <footer>
+          <div class="site-primary-footer">
+           <img src="Images/main logo(white).webp" alt="" id="foot-logo">
+           <section class="Connection Categories">
+             <h2 class="bolder bolder1">Company</h2>
+             <p class="Connect first_left">
+               Pricing <br>
+               About <br>
+               Gallery <br>
+               Contact
+             </p>
+           </section>
+           <section class="Connection Business">
+            <h2 class="bolder bolder2">Destination</h2>   
+            <p class="Connect second_left">
+               India <br>
+               Italy <br>
+               Canada <br> 
+               Switzerland
+             </p>
+           </section>
+           <section class="Connection About">
+           <h2 class="bolder bolder3">Services</h2>
+           <p class="Connect center">
+             Health <br>
+             Ecommerce <br>
+             Food <br>
+             Guide
+             </p>
+           </section>
+           <section class="Connection Follow">
+           <h2 class="bolder bolder5">Follow Us</h2>
+             <div class="Connect right_first">
+             <button class="social1"><i class="fa fa-facebook-square"></i></button>
+             <button class="social2"><i class="fa fa-twitter"></i></button>
+             <button class="social3"><i class="fa fa-instagram"></i></button>
+             <button class="social4"><i class="fa fa-youtube-play"></i></button>
+             <button class="social5"><i class="fa fa-pinterest-p"></i></button>
+           </section>
+         </div>
+       </div><hr>
+       <div class="site-secondary-footer"> 
+         <p class="down">Copyright &copy; 2021 TRAVELO | Powered by TRAVELO
+         </p>
+       </div>
+    </footer>
+    <script src="Java script/script.js"></script>
+  </body>
+</html>
+<!-- https://websitedemos.net/tourism-04/
+
+https://preview.colorlib.com/#travelo
+
+https://preview.colorlib.com/#tralive -->
